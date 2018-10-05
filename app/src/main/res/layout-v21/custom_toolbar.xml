@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar 
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    app:popupTheme="@style/AppTheme.PopupOverlay"
+    android:contentInsetLeft="0dp"
+    android:contentInsetStart="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    android:contentInsetRight="0dp"
+    android:contentInsetEnd="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetEnd="0dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/click"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorTealDark"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/navLeft"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/navTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@id/click"
+                android:layout_toRightOf="@id/click"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/material_toolbar_size" />
+
+        </RelativeLayout>
+    </FrameLayout>
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.wit.android.fitgirl.HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/content_frame"
+        android:layout_above="@+id/main_fragment_holder">
+
+
+    </FrameLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/main_fragment_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:padding="10dp"
+            android:background="@color/colorBlack">
+
+
+            <TextView
+                android:id="@+id/tv_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="65dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginBottom="11dp"
+                android:layout_marginTop="20dp"
+                android:text="Age: "
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_age"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_age"
+                android:layout_alignBottom="@+id/tv_age"
+                android:layout_toEndOf="@+id/tv_weight"
+                android:layout_toRightOf="@+id/tv_weight"
+                android:hint="in years"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp" />
+
+            <TextView
+                android:id="@+id/tv_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/et_height"
+                android:layout_alignBottom="@+id/et_height"
+                android:layout_alignLeft="@+id/tv_age"
+                android:layout_alignStart="@+id/tv_age"
+                android:text="Height: "
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_height"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/et_age"
+                android:layout_alignStart="@+id/et_age"
+                android:layout_below="@+id/et_age"
+                android:layout_marginTop="11dp"
+                android:hint="in M"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/et_weight"
+                android:layout_alignBottom="@+id/et_weight"
+                android:layout_alignLeft="@+id/tv_height"
+                android:layout_alignStart="@+id/tv_height"
+                android:text="Weight: "
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_weight"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/et_height"
+                android:layout_alignStart="@+id/et_height"
+                android:layout_below="@+id/et_height"
+                android:layout_marginTop="11dp"
+                android:hint="in kg"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp"
+                />
+
+            <Button
+                android:id="@+id/calculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_weight"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:text="CALCULATE BMI"
+                android:onClick="calculatebmi"
+                android:textColor="@color/colorBlack" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorTealDark"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/bmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="65dp"
+                android:layout_marginStart="65dp"
+                android:text="BMI: "
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/calculated_bmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="100dp"
+                android:layout_marginStart="70dp"
+                android:text="0.0"
+                android:textColor="@color/colorWhite" />
+
+            <ImageView
+                android:id="@+id/refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/refresh"
+                android:layout_marginStart="70dp" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/happy"
+            android:src="@drawable/happy"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:text="Now that you know your BMI, you are wiser...Our goal here is to do away with any challenges that come with insecurities because of body issues. Here's to building each other up to gain all the information we can get on all things health, fitness, confidence and above all happy women :)" />
+    </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

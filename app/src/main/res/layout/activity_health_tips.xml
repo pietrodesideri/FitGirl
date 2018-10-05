@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wit.android.fitgirl.HealthTipsActivity">
+
+    <include layout="@layout/custom_toolbar"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rlayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="57dp">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/stress" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/imageView5"
+            android:layout_toRightOf="@+id/imageView5"
+            android:padding="3dp"
+            android:text="The Physical Side of Stress"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imageView5"
+            android:layout_toRightOf="@+id/imageView5"
+            android:text="Clare Kittrege"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:padding="3dp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/rly1"
+        android:layout_below="@id/rlayout"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/im1"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/smilelaugh" />
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/im1"
+            android:layout_toRightOf="@+id/im1"
+            android:padding="3dp"
+            android:layout_marginLeft="5dp"
+            android:text="The Health Benefits of Laughter"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/im1"
+            android:layout_toRightOf="@+id/im1"
+            android:text="Clare Kittrege"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:padding="3dp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/rly1">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/stress" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/imageView3"
+            android:layout_toRightOf="@+id/imageView3"
+            android:padding="3dp"
+            android:text="The Physical Side of Stress"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imageView3"
+            android:layout_toRightOf="@+id/imageView3"
+            android:text="Clare Kittrege"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:padding="3dp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout3"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/rlayout2">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/smilelaugh" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/imageView6"
+            android:layout_toRightOf="@+id/imageView6"
+            android:padding="3dp"
+            android:text="The Health Benefits of Laughter"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imageView6"
+            android:layout_toRightOf="@+id/imageView6"
+            android:text="Clare Kittrege"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:padding="3dp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout4"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/rlayout3">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/stress" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/imageView7"
+            android:layout_toRightOf="@+id/imageView7"
+            android:padding="3dp"
+            android:text="The Physical Side of Stress"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imageView7"
+            android:layout_toRightOf="@+id/imageView7"
+            android:text="Clare Kittrege"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:padding="3dp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout53"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/rlayout4">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/smilelaugh" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/imageView8"
+            android:layout_toRightOf="@+id/imageView8"
+            android:padding="3dp"
+            android:text="The Health Benefits of Laughter"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imageView8"
+            android:layout_toRightOf="@+id/imageView8"
+            android:text="Clare Kittrege"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:padding="3dp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

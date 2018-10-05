@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wit.android.fitgirl.AboutFitGirlActivity">
+
+    <include layout="@layout/custom_toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:id="@+id/logo">
+
+        <ImageView
+
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="106dp"
+            android:layout_marginRight="106dp"
+            android:layout_marginTop="55dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_heartbeat" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/logo"
+        android:background="@color/colorBlack"
+        android:id="@+id/line_break_1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/about_fit_girl"
+        android:textColor="@color/colorTealDark"
+        android:text="@string/about_fit_girl_"
+        android:layout_below="@id/logo"
+        android:gravity="center_horizontal"
+        android:padding="3dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/about_fit_girl"
+        android:background="@color/colorBlack"
+        android:id="@+id/line_break_2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/about_us"
+        android:layout_below="@+id/line_break_2"
+        android:textSize="12sp"
+        android:text="@string/about_us"
+        android:textColor="@color/colorBlack"
+        android:padding="12dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/we_at_fit_girl_believe_that_all_of_us_are_beautiful_and_that_that_message_should_be_spread_all_over_the_main_aim_of_this_app_here_is_to_simply_boost_the_confidence_of_girls_by_letting_them_know_they_are_beautiful_where_they_stand_in_terms_of_bmi_and_give_them_relevant_information_that_helps_boost_their_confidence_and_care_about_their_health_in_the_best_way_they_can"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        android:padding="12dp"
+        android:id="@+id/par2"
+        android:layout_below="@id/about_us"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/par3"
+        android:text="@string/we_do_hope_you_greatly_benefit_from_the_information_provided"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        android:padding="12dp"
+        android:layout_below="@id/par2"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/line_break_2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/line_break_2"
+        android:src="@drawable/sign" />
+
+
+
+</RelativeLayout>

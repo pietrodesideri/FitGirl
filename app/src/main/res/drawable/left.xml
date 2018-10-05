@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="@dimen/tabbed_layout_border_item_size" android:right="@dimen/tabbed_layout_border_item_size_negative" android:bottom="@dimen/tabbed_layout_border_item_size" android:left="@dimen/tabbed_layout_border_item_size">
+        <shape>
+            <solid android:color="@android:color/transparent"/>
+            <corners android:bottomLeftRadius="@dimen/tabbed_layout_border_corner_radius"
+                android:bottomRightRadius="0dp"
+                android:topRightRadius="0dp"
+                android:topLeftRadius="@dimen/tabbed_layout_border_corner_radius"/>
+            <stroke  android:width="@dimen/tabbed_layout_tab_border_width" android:color="@color/colorWhite" />
+        </shape>
+    </item>
+</layer-list>

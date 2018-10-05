@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/health_tips"
+            android:icon="@drawable/running"
+            android:title="@string/health_tips" />
+        <item
+            android:id="@+id/healthy_recipes"
+            android:icon="@drawable/food"
+            android:title="@string/healthy_recipes" />
+        <item
+            android:id="@+id/fitness_videos"
+            android:icon="@drawable/fit_videos"
+            android:title="@string/fitness_videos" />
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/ic_heartbeat"
+            android:title="@string/about_fit_girl" />
+    </group>
+
+    <item android:title="@string/communicate">
+        <menu>
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/share"
+                android:title="@string/share" />
+            <item
+                android:id="@+id/settings"
+                android:icon="@drawable/settings"
+                android:title="@string/settings" />
+        </menu>
+    </item>
+
+</menu>

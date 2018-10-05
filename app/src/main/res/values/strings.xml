@@ -1,0 +1,34 @@
+<resources>
+
+    <string name="app_name">Fit Girl</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="fit_girl">Welcome to Fit Girl</string>
+    <string name="Email">EMAIL</string>
+    <string name="password">PASSWORD</string>
+    <string name="skip_for_now">SKIP FOR NOW</string>
+    <string name="terms">By using Fit Girl, you agree with the Terms and Conditions</string>
+    <string name="ivy_league">Ivy League</string>
+    <string name="login">LOGIN</string>
+    <string name="name">NAME</string>
+    <string name="health_tips">HEALTH TIPS</string>
+    <string name="healthy_recipes">HEALTHY RECIPES</string>
+    <string name="fitness_videos">FITNESS VIDEOS</string>
+    <string name="about_fit_girl">ABOUT FIT GIRL</string>
+    <string name="communicate">COMMUNICATE</string>
+    <string name="share">SHARE</string>
+    <string name="settings">SETTINGS</string>
+    <string name="title">Title</string>
+    <string name="loren_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</string>
+    <string name="author_s_name">Author\'s name</string>
+    <string name="about_fit_girl_">About Fit Girl</string>
+    <string name="about_us">We believe empowered and confident girls are girls who can make the difference. It is quite sad that a large number of our girls are affected by issues that arise from lack of confidence in themselves stemming from body issues.  </string>
+    <string name="we_at_fit_girl_believe_that_all_of_us_are_beautiful_and_that_that_message_should_be_spread_all_over_the_main_aim_of_this_app_here_is_to_simply_boost_the_confidence_of_girls_by_letting_them_know_they_are_beautiful_where_they_stand_in_terms_of_bmi_and_give_them_relevant_information_that_helps_boost_their_confidence_and_care_about_their_health_in_the_best_way_they_can">We at Fit Girl believe that all of us are beautiful, and that that message should be spread all over. The main aim of this app here is to simply boost the confidence of girls by letting them know they are beautiful, where they stand in terms of BMI and give them relevant information that helps boost their confidence and care about their health in the best way they can.</string>
+    <string name="we_do_hope_you_greatly_benefit_from_the_information_provided">We do hope you greatly benefit from the information provided :)</string>
+    <string name="topicone">My Rights.        </string>
+    <string name="topic_two">As a young girl in Kenya, you are entitled to the following rights:         -Protection form harmful cultural rites. No child should be subjected to female circumcision, early marriage or other         cultural rites, customs or traditional practices that are likely to negatively affect the child’s life, health, social         welfare, dignity or physical or psychological development.         -Right to parental care.Every child has the right to live with and be cared for by his/her parents.        - Right to Education.Every child is entitled to free and compulsory primary education the provision of which shall be the responsibility of the Government and the parents.</string>
+    <string name="topic3">Importance of education.</string>
+    <string name="topic4">Empowered girls dramatically improve the wellbeing of their families, their society. Educated women are respected in most of the societies they come from. Hence education gives dignity and honor.         Educated women will be a source of inspiration to many young girls as they will be perceived as role models     Learning to read and write changes lives ,it means jobs,money ,health and dreams are fullfilled!! The education and empowerment of women throughout the world cannot fail to result in a more caring, tolerant, just and peaceful life for all</string>
+</resources>

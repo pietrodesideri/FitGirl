@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "831841810703",
+    "firebase_url": "https://fitgirl-76356.firebaseio.com",
+    "project_id": "fitgirl-76356",
+    "storage_bucket": "fitgirl-76356.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:831841810703:android:22f8203e6ac30a60",
+        "android_client_info": {
+          "package_name": "com.wit.android.fitgirl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "831841810703-f5n38q0hvbafa1rrcql287tnb3vimr9s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wit.android.fitgirl",
+            "certificate_hash": "ea9320ebba557145b59369b9a6c164e0e7c2938a"
+          }
+        },
+        {
+          "client_id": "831841810703-iv5vc6s70afapsk1c3mjgrbmt0ufefqa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD56itkMGAKkP5zwLwVN0FV2DIGoKOSaA8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "831841810703-iv5vc6s70afapsk1c3mjgrbmt0ufefqa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -12,13 +12,15 @@
             android:id="@+id/healthy_recipes"
             android:icon="@drawable/food"
             android:title="@string/healthy_recipes" />
+
         <item
-            android:id="@+id/fitness_videos"
-            android:icon="@drawable/fit_videos"
-            android:title="@string/fitness_videos" />
+            android:id="@+id/exercise"
+            android:icon="@drawable/ic_heartbeat"
+            android:title="@string/exercise_tips" />
+
         <item
             android:id="@+id/about"
-            android:icon="@drawable/ic_heartbeat"
+            android:icon="@drawable/running"
             android:title="@string/about_fit_girl" />
     </group>
 
@@ -28,10 +30,7 @@
                 android:id="@+id/share"
                 android:icon="@drawable/share"
                 android:title="@string/share" />
-            <item
-                android:id="@+id/settings"
-                android:icon="@drawable/settings"
-                android:title="@string/settings" />
+
         </menu>
     </item>
 

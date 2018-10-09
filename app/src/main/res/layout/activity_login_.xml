@@ -7,6 +7,14 @@
     tools:context=".Login_Activity"
     android:id="@+id/coordinator">
 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -202,6 +210,7 @@
                     android:id="@+id/facebook_logo"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
+                    android:visibility="invisible"
                     android:layout_marginTop="10dp"
                     android:src="@drawable/facebook" />
 
@@ -211,6 +220,7 @@
                     android:layout_height="40dp"
                     android:layout_marginLeft="100dp"
                     android:layout_marginTop="10dp"
+                    android:visibility="invisible"
                     android:src="@drawable/google_plus" />
 
             </RelativeLayout>

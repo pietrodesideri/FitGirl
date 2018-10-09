@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="@dimen/nav_header_vertical_spacing"
-        app:srcCompat="@mipmap/ic_launcher_round" />
+        app:srcCompat="@drawable/ic_heartbeat" />
 
     <TextView
         android:id="@+id/users_name"
@@ -26,10 +26,8 @@
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/nav_header_vertical_spacing"
-        android:text="@string/ivy_league"
+        android:padding="6dp"
+        android:text="Fit Girl"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-
-
 
 </LinearLayout>

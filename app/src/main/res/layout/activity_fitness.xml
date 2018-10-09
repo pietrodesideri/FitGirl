@@ -8,266 +8,120 @@
 
     <include layout="@layout/custom_toolbar"/>
 
-    <RelativeLayout
-        android:id="@+id/rlayout"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_marginTop="57dp">
+        android:layout_height="match_parent"
+        android:layout_marginTop = "60dp">
 
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/stress" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginLeft="5dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="15dp"
-            android:layout_toEndOf="@+id/imageView5"
-            android:layout_toRightOf="@+id/imageView5"
-            android:padding="3dp"
-            android:text="The Physical Side of Stress"
-            android:textColor="#000"
-            android:textSize="12sp"
-            android:textStyle="bold" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:id="@+id/logo">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toEndOf="@+id/imageView5"
-            android:layout_toRightOf="@+id/imageView5"
-            android:text="Clare Kittrege"
-            android:layout_marginLeft="5dp"
-            android:textColor="#000"
-            android:textSize="10sp"
-            android:padding="3dp"
-            android:textStyle="normal" />
+                <ImageView
 
-    </RelativeLayout>
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="1dp"
+                    android:padding="8dp"
+                    android:src="@drawable/fit"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/logo"
+                android:background="@color/colorBlack"
+                android:id="@+id/line_break_1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/about_fit_girl"
+                android:textColor="@color/colorTealDark"
+                android:text="Fitness Exercises"
+                android:layout_below="@id/logo"
+                android:gravity="center_horizontal"
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/about_fit_girl"
+                android:background="@color/colorBlack"
+                android:id="@+id/line_break_2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/line_break_2">
 
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:id="@+id/rly1"
-        android:layout_below="@id/rlayout"
-        android:layout_marginTop="5dp">
+            </ScrollView>
 
-        <ImageView
-            android:id="@+id/im1"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/smilelaugh" />
 
-        <TextView
-            android:id="@+id/title1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="15dp"
-            android:layout_toEndOf="@+id/im1"
-            android:layout_toRightOf="@+id/im1"
-            android:padding="3dp"
-            android:layout_marginLeft="5dp"
-            android:text="The Health Benefits of Laughter"
-            android:textColor="#000"
-            android:textSize="12sp"
-            android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="5dp"
-            android:layout_toEndOf="@+id/im1"
-            android:layout_toRightOf="@+id/im1"
-            android:text="Clare Kittrege"
-            android:textColor="#000"
-            android:textSize="10sp"
-            android:padding="3dp"
-            android:textStyle="normal" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Routinen\n\n
+   You don't have to lift weights every day to gain weight;
+   you actually shouldn't since your muscles need a day of rest
+   to recover and repair. Bodybuilding.com recommends no more than 60 minutes
+   of strength training, three days each week for beginners. Start with two
+   sets of 10 to 12 repetitions of each exercise in your routine and add more
+   as you gain strength and endurance. This helps produce results in two to
+   three weeks. Choose exercises that target each of your major muscle groups,
+   including your legs, arms, back, shoulders and core. This creates a
+   proportionate look and allows you to gain weight all over your body. \n\n
 
-    </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/rlayout2"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_below="@id/rly1">
+  Calories\n\n
+   Strength training burns calories, which means you must replenish them
+   to contribute to weight gain. However, this doesn't mean you can eat
+   anything, in any quantity. The key to healthy weight gain is to choose
+   quality calories that fuel your exercise sessions while also providing
+   your body with healthy fats and nutrients. Complex carbohydrates are
+   important for energy and good sources include brown rice, oatmeal,
+   whole-wheat bread, whole-wheat pasta and whole grain cereal.\n
+   Protein is vital for supporting muscles and helping them gain in mass
+   after a workout. Lean beef, chicken, fish, beans and dairy foods are
+   good options. Healthy fats aid in weight gain, but are also good for
+  your health. Avocados, salmon, nuts and olive oil are good choices.\n\n
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/stress" />
+  Considerations\n\n
+    Your specific calorie needs won't be the same as someone at a normal weight.
+    Your doctor is a good resource for calculating how many calories you need
+    to add pounds. This number is likely to change until you reach your goal
+    and your calorie needs go down. Some people may begin losing weight if
+    calories are cut, so monitor your weight carefully.\n\n"
 
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginLeft="5dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="15dp"
-            android:layout_toEndOf="@+id/imageView3"
-            android:layout_toRightOf="@+id/imageView3"
-            android:padding="3dp"
-            android:text="The Physical Side of Stress"
-            android:textColor="#000"
-            android:textSize="12sp"
-            android:textStyle="bold" />
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                android:padding="12dp"
+                android:id="@+id/par1"
+                android:layout_below="@id/line_break_2" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toEndOf="@+id/imageView3"
-            android:layout_toRightOf="@+id/imageView3"
-            android:text="Clare Kittrege"
-            android:layout_marginLeft="5dp"
-            android:textColor="#000"
-            android:textSize="10sp"
-            android:padding="3dp"
-            android:textStyle="normal" />
+        </RelativeLayout>
 
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/rlayout3"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_below="@id/rlayout2">
-
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/smilelaugh" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginLeft="5dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="15dp"
-            android:layout_toEndOf="@+id/imageView6"
-            android:layout_toRightOf="@+id/imageView6"
-            android:padding="3dp"
-            android:text="The Health Benefits of Laughter"
-            android:textColor="#000"
-            android:textSize="12sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toEndOf="@+id/imageView6"
-            android:layout_toRightOf="@+id/imageView6"
-            android:text="Clare Kittrege"
-            android:layout_marginLeft="5dp"
-            android:textColor="#000"
-            android:textSize="10sp"
-            android:padding="3dp"
-            android:textStyle="normal" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/rlayout4"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_below="@id/rlayout3">
-
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/stress" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginLeft="5dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="15dp"
-            android:layout_toEndOf="@+id/imageView7"
-            android:layout_toRightOf="@+id/imageView7"
-            android:padding="3dp"
-            android:text="The Physical Side of Stress"
-            android:textColor="#000"
-            android:textSize="12sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toEndOf="@+id/imageView7"
-            android:layout_toRightOf="@+id/imageView7"
-            android:text="Clare Kittrege"
-            android:layout_marginLeft="5dp"
-            android:textColor="#000"
-            android:textSize="10sp"
-            android:padding="3dp"
-            android:textStyle="normal" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/rlayout53"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_below="@id/rlayout4">
-
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/smilelaugh" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginLeft="5dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="15dp"
-            android:layout_toEndOf="@+id/imageView8"
-            android:layout_toRightOf="@+id/imageView8"
-            android:padding="3dp"
-            android:text="The Health Benefits of Laughter"
-            android:textColor="#000"
-            android:textSize="12sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toEndOf="@+id/imageView8"
-            android:layout_toRightOf="@+id/imageView8"
-            android:text="Clare Kittrege"
-            android:layout_marginLeft="5dp"
-            android:textColor="#000"
-            android:textSize="10sp"
-            android:padding="3dp"
-            android:textStyle="normal" />
-
-    </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>

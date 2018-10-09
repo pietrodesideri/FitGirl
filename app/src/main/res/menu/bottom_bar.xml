@@ -7,13 +7,15 @@
             android:title="BMI" />
 
         <item
+            android:id="@+id/tips"
+            android:icon="@drawable/food__"
+            android:title="TIPS" />
+
+        <item
             android:id="@+id/photosItem"
             android:icon="@drawable/user"
             android:title="PROFILE" />
 
-        <item
-            android:id="@+id/tips"
-            android:icon="@drawable/food"
-            android:title="TIPS" />
+
 
 </menu>

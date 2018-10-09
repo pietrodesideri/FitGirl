@@ -8,267 +8,118 @@
 
     <include layout="@layout/custom_toolbar"/>
 
-
-    <RelativeLayout
-        android:id="@+id/rlayout"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_marginTop="57dp">
+        android:layout_height="match_parent"
+        android:layout_marginTop = "60dp">
 
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/stress" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginLeft="5dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="15dp"
-            android:layout_toEndOf="@+id/imageView5"
-            android:layout_toRightOf="@+id/imageView5"
-            android:padding="3dp"
-            android:text="The Physical Side of Stress"
-            android:textColor="#000"
-            android:textSize="12sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toEndOf="@+id/imageView5"
-            android:layout_toRightOf="@+id/imageView5"
-            android:text="Clare Kittrege"
-            android:layout_marginLeft="5dp"
-            android:textColor="#000"
-            android:textSize="10sp"
-            android:padding="3dp"
-            android:textStyle="normal" />
-
-    </RelativeLayout>
-
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:id="@+id/rly1"
-        android:layout_below="@id/rlayout"
-        android:layout_marginTop="5dp">
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:id="@+id/logo">
 
         <ImageView
-            android:id="@+id/im1"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/smilelaugh" />
 
-        <TextView
-            android:id="@+id/title1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="15dp"
-            android:layout_toEndOf="@+id/im1"
-            android:layout_toRightOf="@+id/im1"
-            android:padding="3dp"
-            android:layout_marginLeft="5dp"
-            android:text="The Health Benefits of Laughter"
-            android:textColor="#000"
-            android:textSize="12sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="5dp"
-            android:layout_toEndOf="@+id/im1"
-            android:layout_toRightOf="@+id/im1"
-            android:text="Clare Kittrege"
-            android:textColor="#000"
-            android:textSize="10sp"
-            android:padding="3dp"
-            android:textStyle="normal" />
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="1dp"
+            android:padding="8dp"
+            android:src="@drawable/food__" />
 
     </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/rlayout2"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_below="@id/rly1">
+        android:layout_height="1dp"
+        android:layout_below="@id/logo"
+        android:background="@color/colorBlack"
+        android:id="@+id/line_break_1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/stress" />
-
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginLeft="5dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="15dp"
-            android:layout_toEndOf="@+id/imageView3"
-            android:layout_toRightOf="@+id/imageView3"
-            android:padding="3dp"
-            android:text="The Physical Side of Stress"
-            android:textColor="#000"
-            android:textSize="12sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toEndOf="@+id/imageView3"
-            android:layout_toRightOf="@+id/imageView3"
-            android:text="Clare Kittrege"
-            android:layout_marginLeft="5dp"
-            android:textColor="#000"
-            android:textSize="10sp"
-            android:padding="3dp"
-            android:textStyle="normal" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/rlayout3"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_below="@id/rlayout2">
+        android:layout_height="wrap_content"
+        android:id="@+id/about_fit_girl"
+        android:textColor="@color/colorTealDark"
+        android:text="Recipes"
+        android:layout_below="@id/logo"
+        android:gravity="center_horizontal"
+        android:padding="3dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
 
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/smilelaugh" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginLeft="5dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="15dp"
-            android:layout_toEndOf="@+id/imageView6"
-            android:layout_toRightOf="@+id/imageView6"
-            android:padding="3dp"
-            android:text="The Health Benefits of Laughter"
-            android:textColor="#000"
-            android:textSize="12sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toEndOf="@+id/imageView6"
-            android:layout_toRightOf="@+id/imageView6"
-            android:text="Clare Kittrege"
-            android:layout_marginLeft="5dp"
-            android:textColor="#000"
-            android:textSize="10sp"
-            android:padding="3dp"
-            android:textStyle="normal" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/rlayout4"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_below="@id/rlayout3">
+        android:layout_height="1dp"
+        android:layout_below="@id/about_fit_girl"
+        android:background="@color/colorBlack"
+        android:id="@+id/line_break_2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
 
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/stress" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginLeft="5dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="15dp"
-            android:layout_toEndOf="@+id/imageView7"
-            android:layout_toRightOf="@+id/imageView7"
-            android:padding="3dp"
-            android:text="The Physical Side of Stress"
-            android:textColor="#000"
-            android:textSize="12sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toEndOf="@+id/imageView7"
-            android:layout_toRightOf="@+id/imageView7"
-            android:text="Clare Kittrege"
-            android:layout_marginLeft="5dp"
-            android:textColor="#000"
-            android:textSize="10sp"
-            android:padding="3dp"
-            android:textStyle="normal" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/rlayout53"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_below="@id/rlayout4">
+        android:layout_height="match_parent"
+        android:layout_below="@id/line_break_2">
 
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/smilelaugh" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginLeft="5dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="15dp"
-            android:layout_toEndOf="@+id/imageView8"
-            android:layout_toRightOf="@+id/imageView8"
-            android:padding="3dp"
-            android:text="The Health Benefits of Laughter"
-            android:textColor="#000"
-            android:textSize="12sp"
-            android:textStyle="bold" />
+    </ScrollView>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toEndOf="@+id/imageView8"
-            android:layout_toRightOf="@+id/imageView8"
-            android:text="Clare Kittrege"
-            android:layout_marginLeft="5dp"
-            android:textColor="#000"
-            android:textSize="10sp"
-            android:padding="3dp"
-            android:textStyle="normal" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tip1"
+        android:layout_below="@+id/line_break_2"
+        android:textSize="14sp"
+        android:text="Beef and Vegetable Stir-fry"
+        android:textColor="@color/colorBlack"
+        android:padding="12dp"
+        />
 
-    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INGREDIENTS\n\n\n3 tbsp reduced-sodium soy sauce\n1 tbsp brown sugar\n2 tsp grated fresh ginger\n1 tbsp cornstarch\n3/4 cup water, divided\nNonstick cooking spray\n2 tsp canola oil, divided\n1 lb beef sirloin steak, boneless, cut across grain into 1/4-inch strips\n1/2 cup sliced onion\n1/2 cup sliced celery\n2 cups sliced mushrooms\n1/2 cup thinly sliced carrots\n2 cups broccoli florets, cut in half
+
+2 cups asparagus, cut into 2-inch lengths\n
+2 cups fresh spinach leaves\n
+1 1/4 cups brown rice, cooked according to directions without salt or fat\n\n\n
+DIRECTIONS\n
+In a small bowl combine soy sauce, brown sugar, ginger, cornstarch, and 1/2 cup water. Set aside.\n
+Spray a large skillet or wok with nonstick cooking spray. Place the skillet over medium-high heat and add 1 tsp canola oil. When hot, add beef strips and stir-fry 4 to 5 minutes or until beef is cooked through. Remove beef from skillet. Set aside.\n
+Add remaining canola oil. When hot, add onion and celery. Stir-fry 1 to 2 minutes. \n
+Add mushrooms and stir-fry 2 minutes.\n
+Add carrots, broccoli, asparagus, and 1/4 cup water. Cover. Cook 3 to 4 minutes.\n
+Add spinach and cook 2 more minutes or until vegetables are tender.\n
+Add beef strips along with soy sauce mixture. Stir and cook 1 to 2 minutes until liquid thickens and stir-fry mixture is heated through. Serve over hot rice.\n
+Makes 4 servings.\n\n\n
+
+NUTRITION\n
+
+Calories:475, Sodium:443mg, Fat:10g,Protein:33g, Carbs:62g, Fiber:7g\n\n
+
+Avoid Processed Junk Food (Eat Real Food Instead)\n\n"
+
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp"
+        android:padding="12dp"
+        android:id="@+id/par1"
+        android:layout_below="@id/tip1" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
 
 </RelativeLayout>

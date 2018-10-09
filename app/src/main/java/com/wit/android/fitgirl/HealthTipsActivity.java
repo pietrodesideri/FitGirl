@@ -1,5 +1,8 @@
 package com.wit.android.fitgirl;
 
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -9,8 +12,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,14 +30,18 @@ import java.util.List;
 public class HealthTipsActivity extends AppCompatActivity
 {
 
+    Button firstFragment, secondFragment, thirdFragment;
     TextView navTitle;
     ImageView navLeft;
     LinearLayout click;
     RecyclerView rv_tips;
+    ListView list;
 
-    private List<Tips> userList = new ArrayList<>();
-    private RecyclerView recyclerView;
-    private TipsAdapter mAdapter;
+//    private List<Tips> userList = new ArrayList<>();
+//    private RecyclerView recyclerView;
+//    private TipsAdapter mAdapter;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,11 +62,20 @@ public class HealthTipsActivity extends AppCompatActivity
             }
         });
 
+        list = findViewById(R.id.list);
+
        // rv_tips = findViewById(R.id.rv_tips);
 
       //  new AsyncFetch().execute();
 
+
+
+
     }
+
+
+
+
 
     public void back() {
         Intent parentIntent = NavUtils.getParentActivityIntent(this);
@@ -93,33 +112,33 @@ public class HealthTipsActivity extends AppCompatActivity
 
             //this method will be running on UI thread
 
-            pdLoading.dismiss();
-            List<Tips> data = new ArrayList<>();
-
-            pdLoading.dismiss();
-            try {
-
-                JSONArray jArray = new JSONArray(result);
-                // Extract data from json and store into ArrayList as class objects
-                for (int i = 0; i < jArray.length(); i++) {
-                    JSONObject json_data = jArray.getJSONObject(i);
-                    Tips tip = new Tips();
-                    tip.article_title = json_data.getString("article_title");
-                    tip.article_author = json_data.getString("author_name");
-
-                    data.add(tip);
-                }
-
-                // Setup and Handover data to recyclerview
-           //     recyclerView = (RecyclerView) findViewById(R.id.rv_tips);
-                mAdapter = new TipsAdapter(getApplicationContext(), data);
-                recyclerView.setAdapter(mAdapter);
-                recyclerView.setLayoutManager(new LinearLayoutManager(HealthTipsActivity.this));
-
-
-            } catch (JSONException e) {
-                Toast.makeText(HealthTipsActivity.this, e.toString(), Toast.LENGTH_LONG).show();
-            }
+//            pdLoading.dismiss();
+//            List<Tips> data = new ArrayList<>();
+//
+//            pdLoading.dismiss();
+//            try {
+//
+//                JSONArray jArray = new JSONArray(result);
+//                // Extract data from json and store into ArrayList as class objects
+//                for (int i = 0; i < jArray.length(); i++) {
+//                    JSONObject json_data = jArray.getJSONObject(i);
+//                    Tips tip = new Tips();
+//                    tip.article_title = json_data.getString("article_title");
+//                    tip.article_author = json_data.getString("author_name");
+//
+//                    data.add(tip);
+//                }
+//
+//                // Setup and Handover data to recyclerview
+//           //     recyclerView = (RecyclerView) findViewById(R.id.rv_tips);
+//                mAdapter = new TipsAdapter(getApplicationContext(), data);
+//                recyclerView.setAdapter(mAdapter);
+//                recyclerView.setLayoutManager(new LinearLayoutManager(HealthTipsActivity.this));
+//
+//
+//            } catch (JSONException e) {
+//                Toast.makeText(HealthTipsActivity.this, e.toString(), Toast.LENGTH_LONG).show();
+//            }
 
         }
 

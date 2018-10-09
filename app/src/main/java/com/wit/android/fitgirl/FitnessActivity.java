@@ -9,27 +9,31 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class FitnessActivity extends AppCompatActivity {
+public class FitnessActivity extends AppCompatActivity
+{
 
     TextView navTitle;
     ImageView navLeft;
     LinearLayout click;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fitness);
 
         navTitle = findViewById(R.id.navTitle);
-        navTitle.setText("Fitness Videos");
+        navTitle.setText("Fitness Exercises");
 
         navLeft = findViewById(R.id.navLeft);
         navLeft.setImageResource(R.drawable.back);
 
         click = findViewById(R.id.click);
-        click.setOnClickListener(new View.OnClickListener() {
+        click.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
                 back();
             }
         });

@@ -13,7 +13,7 @@
     <string name="ivy_league">Ivy League</string>
     <string name="login">LOGIN</string>
     <string name="name">NAME</string>
-    <string name="health_tips">HEALTH TIPS</string>
+    <string name="FIThealth_tips">HEALTH TIPS</string>
     <string name="healthy_recipes">HEALTHY RECIPES</string>
     <string name="fitness_videos">FITNESS VIDEOS</string>
     <string name="about_fit_girl">ABOUT FIT GIRL</string>
@@ -31,4 +31,12 @@
     <string name="topic_two">As a young girl in Kenya, you are entitled to the following rights:         -Protection form harmful cultural rites. No child should be subjected to female circumcision, early marriage or other         cultural rites, customs or traditional practices that are likely to negatively affect the child’s life, health, social         welfare, dignity or physical or psychological development.         -Right to parental care.Every child has the right to live with and be cared for by his/her parents.        - Right to Education.Every child is entitled to free and compulsory primary education the provision of which shall be the responsibility of the Government and the parents.</string>
     <string name="topic3">Importance of education.</string>
     <string name="topic4">Empowered girls dramatically improve the wellbeing of their families, their society. Educated women are respected in most of the societies they come from. Hence education gives dignity and honor.         Educated women will be a source of inspiration to many young girls as they will be perceived as role models     Learning to read and write changes lives ,it means jobs,money ,health and dreams are fullfilled!! The education and empowerment of women throughout the world cannot fail to result in a more caring, tolerant, just and peaceful life for all</string>
+    <string name="fit__girl">Fit Girl</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="auth_failed">Authentication failed.</string>
+    <string name="exercise_tips">EXERCISE TIPS</string>
+    <string name="health_tips">HEALTH TIPS</string>
 </resources>

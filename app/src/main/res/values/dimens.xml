@@ -48,4 +48,5 @@
     <dimen name="standard_padding">20dp</dimen>
     <dimen name="font_pad">20dp</dimen>
     <dimen name="sde_img_width">50dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
 </resources>

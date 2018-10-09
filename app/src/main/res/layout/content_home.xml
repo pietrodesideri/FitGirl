@@ -4,22 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/fragment_holder"
+    android:background="#000"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.wit.android.fitgirl.HomeActivity"
     tools:showIn="@layout/app_bar_home">
 
-    <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/scrollView">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+
+
 
     <FrameLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:id="@+id/content_frame"
         android:layout_above="@+id/main_fragment_holder">
 
@@ -57,6 +54,7 @@
                 android:layout_marginBottom="11dp"
                 android:layout_marginTop="20dp"
                 android:text="Age: "
+                android:singleLine="true"
                 android:textColor="@color/colorWhite"
                 android:textSize="15sp" />
 
@@ -69,6 +67,7 @@
                 android:layout_toEndOf="@+id/tv_weight"
                 android:layout_toRightOf="@+id/tv_weight"
                 android:hint="in years"
+                android:singleLine="true"
                 android:textColor="@color/colorWhite"
                 android:textColorHint="@color/colorWhite"
                 android:textSize="15sp"
@@ -84,6 +83,7 @@
                 android:layout_alignLeft="@+id/tv_age"
                 android:layout_alignStart="@+id/tv_age"
                 android:text="Height: "
+                android:singleLine="true"
                 android:textColor="@color/colorWhite"
                 android:textSize="15sp" />
 
@@ -145,6 +145,7 @@
             android:background="@color/colorTealDark"
             android:orientation="horizontal"
             android:layout_gravity="center_vertical"
+            android:id="@+id/abc"
             android:padding="10dp">
 
             <TextView
@@ -180,22 +181,151 @@
 
         </LinearLayout>
 
-        <ImageView
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/happy"
-            android:src="@drawable/happy"/>
+            android:background="#000"
+            android:layout_marginBottom="0dp"
+            >
 
-        <TextView
+            <ImageView
+                android:id="@+id/happy"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="18dp"
+                android:gravity="center"
+                android:padding="30dp"
+                android:layout_marginLeft="18dp"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:id="@+id/result_message"
+                android:layout_width="262dp"
+                android:layout_height="120dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="135dp"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_below="@id/result_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:id="@+id/tips"
+                android:text="Tips"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_below="@id/tips"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foregroundGravity="center"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:id="@+id/wait"
+                android:text="Enter your details to get tips that suit you"
+                android:gravity="center_horizontal"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tips"
+                android:id="@+id/underweight_tips"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/underweight"
+                    android:lines="5"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorWhite"
+                    android:text="Choose nutrient-rich foods. \nEat more frequently.\nMake every bite count \nHave an occasional treat.\n"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tips"
+                android:id="@+id/normal_tips"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/normal"
+                    android:lines="5"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorWhite"
+                    android:text="Exercise.\nReduce screen time\nWatch out for portion distortion\nDon't skip breakfast."/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:padding="10dp"
-            android:textColor="#000"
-            android:text="Now that you know your BMI, you are wiser...Our goal here is to do away with any challenges that come with insecurities because of body issues. Here's to building each other up to gain all the information we can get on all things health, fitness, confidence and above all happy women :)" />
-    </LinearLayout>
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tips"
+            android:id="@+id/overweight_tips"
+            android:gravity="center"
+                android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/overweight"
+                android:lines="5"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:textColor="@color/colorWhite"
+                android:text="Ensure a Sufficient Intake of B Vitamins\nBe Sure to Get Enough Vitamin D\nEat Plenty of Foods Rich in Vitamin C\nGet Enough Calcium to Regulate Body Composition\n"/>
+
 
         </RelativeLayout>
 
-    </ScrollView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tips"
+                android:id="@+id/obese_tips"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/obese"
+                    android:lines="5"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorWhite"
+                    android:text="Keep the intake of sugar to less than 10% of your total calories\nSnack on seasonal fruits, keep whole fruits easily available\nBoil, Bake, Shallow fry, and roast instead of deep frying."/>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
 
 </RelativeLayout>
